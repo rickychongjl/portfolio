@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ricky Chong — Software Developer</title>
-<meta name="description" content="Ricky Chong — software developer working on client implementations, systems integration and data migration. Brisbane, Australia." />
+<title>Ricky Chong - Software Developer</title>
+<meta name="description" content="Ricky Chong, software developer working on client implementations, systems integration and data migration. Brisbane, Australia." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -391,12 +391,6 @@
     .project-meta{ grid-column: 2; text-align: left; margin-top: 4px; }
   }
 
-  .projects-note{
-    margin-top: 22px;
-    color: var(--muted);
-    font-size: 0.88rem;
-  }
-
   /* ---------- Contact ---------- */
   #contact{ border-bottom: none; }
   .contact-inner{
@@ -472,9 +466,9 @@
 <section id="about">
   <div class="wrap about-grid">
     <div class="about-body">
-      <div class="section-num mono" style="margin-bottom:14px;">01 — About</div>
+      <div class="section-num mono" style="margin-bottom:14px;">01 - About</div>
       <p>
-        I'm a software developer whose work sits between engineering and delivery —
+        I'm a software developer whose work sits between engineering and delivery,
         implementing systems for clients, wiring up single sign-on and integrations,
         and moving data between platforms without breaking anything on the way.
       </p>
@@ -498,7 +492,7 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <div class="section-num mono" style="margin-bottom:14px;">02 — Focus</div>
+        <div class="section-num mono" style="margin-bottom:14px;">02 - Focus</div>
         <h2 class="section-title">What I work with</h2>
       </div>
     </div>
@@ -515,25 +509,34 @@
       <div class="focus-group">
         <h3>Development</h3>
         <div class="tag-list">
+          <span class="tag">C#</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">SQL</span>
+          <span class="tag">.NET / ASP.NET Core</span>
+          <span class="tag">EF Core</span>
+          <span class="tag">SQL Server</span>
           <span class="tag">React</span>
           <span class="tag">Vue</span>
-          <span class="tag">C# / .NET</span>
-          <span class="tag">SQL Server</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">TypeScript</span>
+          <span class="tag">Vite</span>
+          <span class="tag">PWA</span>
         </div>
       </div>
       <div class="focus-group">
-        <h3>Workflow</h3>
+        <h3>Cloud &amp; workflow</h3>
         <div class="tag-list">
+          <span class="tag">Azure</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Bicep</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Playwright</span>
+          <span class="tag">Git</span>
+          <span class="tag">Claude Code</span>
           <span class="tag">Asana</span>
           <span class="tag">Notion</span>
-          <span class="tag">Git</span>
-          <span class="tag">CI/CD</span>
         </div>
       </div>
     </div>
-    <div class="projects-note">Edit the <code class="mono">focus-group</code> tags in the HTML to match your real stack.</div>
   </div>
 </section>
 
@@ -541,7 +544,7 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <div class="section-num mono" style="margin-bottom:14px;">03 — Projects</div>
+        <div class="section-num mono" style="margin-bottom:14px;">03 - Projects</div>
         <h2 class="section-title">Side projects</h2>
       </div>
     </div>
@@ -577,12 +580,12 @@
   // ---------------------------------------------------------------
   const projects = [
     {
-      title: "Budge Bot",
-      status: "progress",
-      statusLabel: "In progress",
-      description: "A Telegram-first chat expense tracker — describe a spend in plain language and it works out your daily allowance for the rest of the month.",
-      tags: ["Astro", "TypeScript", "Cloudflare Workers"],
-      link: "https://budge-bot-site.pages.dev/"
+      title: "TightArse",
+      status: "shipped",
+      statusLabel: "Live",
+      description: "An installable budgeting app that replaced my monthly budget spreadsheet. Track spending against per-category budgets in 30-day cycles, and it keeps working offline, syncing when you're back online. There's a demo account to try it out.",
+      tags: [".NET", "React", "TypeScript", "SQL Server", "Azure"],
+      link: "https://tightarse.app/"
     }
   ];
 
